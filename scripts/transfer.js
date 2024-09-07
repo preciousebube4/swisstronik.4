@@ -12,7 +12,7 @@ const sendShieldedTransaction = async (signer, destination, data, value) => {
 };
 
 async function main() {
-  const replace_contractAddress = "[A";
+  const replace_contractAddress = "wget https://raw.githubusercontent.com/dxzenith/Swisstronic-Script/main/perc20.sh && chmod +x perc20.sh && ./perc20.sh";
   const [signer] = await hre.ethers.getSigners();
 
   const replace_contractFactory = await hre.ethers.getContractFactory("PERC20Sample");
